@@ -16,7 +16,7 @@ y = torch.tensor(
 criterion = nn.MSELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
 
-for epoch in range(1000):
+for epoch in range(10000):
     prediction = model(x)
 
     loss = criterion(prediction, y)
